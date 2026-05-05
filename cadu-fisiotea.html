@@ -32,10 +32,12 @@ body{background:var(--bg);color:var(--text);font-family:'Satoshi',-apple-system,
 
 /* NAV */
 nav{z-index:300;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);background:#fafaf8e0;justify-content:space-between;align-items:center;height:64px;padding:0 2.5rem;display:flex;position:fixed;top:0;left:0;right:0}
+.logo-font{font-family:var(--font-logo)}
 .nav-brand{align-items:center;gap:8px;text-decoration:none;display:flex}
 .nav-wordmark{color:#f74e45;letter-spacing:-.02em;font-size:18px;font-weight:900;font-family:var(--font-logo)}
 .nav-slash{color:var(--text-3);margin:0 1px}
 .nav-context{color:var(--text-3);font-size:13px;font-weight:500}
+.nav-client-logo{height:18px;width:auto;display:block;background:transparent}
 .nav-links{gap:1.75rem;list-style:none;display:flex}
 .nav-links a{color:var(--text-2);font-size:13px;font-weight:600;text-decoration:none;transition:color .18s}
 .nav-links a:hover{color:var(--black)}
@@ -74,6 +76,7 @@ section{position:relative}
 .hero-brand{font-family:var(--font-logo);letter-spacing:-.06em;color:#f74e45;font-size:clamp(7.5rem,26vw,18rem);font-weight:900;line-height:.78}
 .hero-brand-sub{font-family:var(--font-logo);font-size:clamp(1.2rem,3vw,2.2rem);font-weight:900;color:var(--text-3);letter-spacing:-.02em;margin-top:.75rem}
 .hero-brand-sub .para-word{font-family:'Satoshi',-apple-system,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}
+.hero-client-logo-inline{height:30px;width:auto;display:block;background:transparent}
 .hero-content{border-bottom:1px solid var(--border);z-index:2;background:#fff;padding:8rem 0 5rem;position:relative}
 .hero-inline-brand{font-family:var(--font-logo);letter-spacing:-.04em;color:#f74e45;opacity:clamp(0,calc((var(--hero-progress)-.82)*8),1);margin-bottom:.75rem;font-size:22px;font-weight:900}
 .hero-headline{letter-spacing:-.04em;color:var(--black);max-width:760px;margin-bottom:1.5rem;font-size:clamp(1.7rem,3.8vw,3.5rem);font-weight:900;line-height:1.04}
@@ -211,7 +214,7 @@ footer{background:var(--black);border-top:1px solid #ffffff0f;flex-wrap:wrap;jus
   <a href="https://cadu.health" class="nav-brand">
     <span class="nav-wordmark">CADU</span>
     <span class="nav-slash">/</span>
-    <span class="nav-context">FisioTea</span>
+    <img class="nav-client-logo" src="https://fisiotea.com.br/imagem/filiais/cdta.jpg" alt="FisioTea"/>
   </a>
   <ul class="nav-links">
     <li><a href="#problema">O problema</a></li>
@@ -233,7 +236,10 @@ footer{background:var(--black);border-top:1px solid #ffffff0f;flex-wrap:wrap;jus
   <div class="wrap">
     <div class="hero-brand-stage" aria-hidden="true">
       <div id="cadu-lottie" class="hero-brand-lottie-wrap enter-1" aria-hidden="true"></div>
-      <div class="hero-brand-sub"><span class="para-word">para</span> FisioTea</div>
+      <div class="hero-brand-sub">
+        <span class="para-word">para</span>
+        <img class="hero-client-logo-inline" src="https://fisiotea.com.br/imagem/filiais/cdta.jpg" alt="FisioTea"/>
+      </div>
     </div>
     <div class="hero-scrollspace"></div>
   </div>
