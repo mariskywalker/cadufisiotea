@@ -31,7 +31,7 @@ body{background:var(--bg);color:var(--text);font-family:'Satoshi',-apple-system,
 .blob{filter:blur(100px);opacity:.28;border-radius:50%;position:absolute}
 
 /* NAV */
-nav{z-index:300;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);background:#fafaf8e0;justify-content:space-between;align-items:center;height:64px;padding:0 2.5rem;display:flex;position:fixed;top:0;left:0;right:0}
+nav{z-index:300;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);background:#fafaf8e0;justify-content:space-between;align-items:center;height:96px;padding:0 2.5rem;display:flex;position:fixed;top:0;left:0;right:0}
 .logo-font{font-family:var(--font-logo)}
 .nav-brand{align-items:center;gap:8px;text-decoration:none;display:flex}
 .nav-wordmark{color:#f74e45;letter-spacing:-.02em;font-size:18px;font-weight:900;font-family:var(--font-logo)}
@@ -68,7 +68,7 @@ section{position:relative}
 
 /* HERO */
 #hero{border-bottom:1px solid var(--border);min-height:100vh;padding:0}
-.hero-brand-stage{pointer-events:none;text-align:center;z-index:0;height:calc(100vh - 64px);transform:translateY(calc(var(--hero-progress)*-72px)) scale(calc(1 - (var(--hero-progress)*.16)));opacity:max(0,calc(1 - (var(--hero-progress)*2.2)));filter:blur(calc(var(--hero-progress)*.6px));flex-direction:column;justify-content:center;align-items:center;gap:10px;display:flex;position:sticky;top:64px}
+.hero-brand-stage{pointer-events:none;text-align:center;z-index:0;height:calc(100vh - 96px);transform:translateY(calc(var(--hero-progress)*-72px)) scale(calc(1 - (var(--hero-progress)*.16)));opacity:max(0,calc(1 - (var(--hero-progress)*2.2)));filter:blur(calc(var(--hero-progress)*.6px));flex-direction:column;justify-content:center;align-items:center;gap:10px;display:flex;position:sticky;top:96px}
 .hero-scrollspace{height:120vh}
 .hero-brand-lottie-wrap{width:min(820px,92vw);aspect-ratio:732/486;max-height:46vh;display:flex;align-items:center;justify-content:center;transform:translateY(-8px)}
 .hero-brand-lottie{width:100%;height:auto;max-width:100%;display:block}
